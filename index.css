@@ -1,3 +1,5 @@
+/* reset */
+
 *{
     box-sizing: border-box;
 }
@@ -12,5 +14,167 @@ ul{
 }
 
 li{
-    text-decoration: none;
+    list-style: none;
 }
+
+
+/* main */
+
+
+#mainContent{
+    background-image: radial-gradient(#b6a794, #a6744f, #575350);
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+}
+
+
+/* profile card */
+
+#profileCard{
+    background-color: white;
+    width: 25%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+
+#proPic{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#profileHeading{
+    font-size: 1.5rem;
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#profileCard h4{
+    font-size: .5rem;
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+
+#ProfileFooter{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #383431;
+    grid-column: 1/4;
+}
+
+
+.PfElements{
+    padding: 15px;
+}
+
+/* legion card */
+
+#legionCard{
+    background-color: white;
+    width: 25%;
+}
+
+#logoImg{
+    height: 50px;
+    width: 50px;
+}
+
+/* sub logo */
+
+#subLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#subLogo h4{
+    /*margin: 0 20px;*/
+    font-size: 8pt;
+}
+
+#subl_1{
+    height: 60px;
+    width: 5px;
+    transform: rotate(270deg);
+}
+#subl_2{
+    height: 60px;
+    width: 5px;
+    transform: rotate(90deg);
+}
+
+/* stats */
+
+#stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statbar{
+    width: 90%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 0 0;
+    font-size: 8pt;
+    color: white;
+}
+
+#orangeStat{
+    background-color: orangered;
+}
+
+#LgStat{
+    background-color: lightgray;
+}
+
+#greyStat{
+    background-color: gray;
+}
+
+/* stat footer */
+
+
+#statFooter{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.sfCircle{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+#c1{
+    border: 3px solid lightgray;
+}
+
+#c1 h3{
+    color: lightgray;
+}
+
+#c2{
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid white;
+}
+
+#c2 h3{
+    color: gray;
+}
+
