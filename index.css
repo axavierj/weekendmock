@@ -7,7 +7,11 @@
 body{
     margin: 0;
     padding: 0;
+	background-color: black
 }
+body {
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -83,6 +87,8 @@ li{
 #legionCard{
     background-color: white;
     width: 25%;
+	text-align: center;
+	padding: 15px;
 }
 
 #logoImg{
@@ -96,10 +102,10 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-around;
+	padding: 0 40px;
 }
 
 #subLogo h4{
-    /*margin: 0 20px;*/
     font-size: 8pt;
 }
 
@@ -157,6 +163,9 @@ li{
     border-radius: 100px;
     width: 50px;
     height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #c1{
@@ -165,6 +174,7 @@ li{
 
 #c1 h3{
     color: lightgray;
+	
 }
 
 #c2{
@@ -178,3 +188,48 @@ li{
     color: gray;
 }
 
+#c3{
+	border: 3px solid orangered;
+	color: orangered;
+}
+#satteext {
+	font-size: 7pt;
+}
+
+#map {
+	background-image: url("images/map.png");
+	background-size: cover;
+	height: 200px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+}
+
+#geoCard {
+	background-color: white;
+	width: 35%;
+}
+
+
+#orangeBox {
+	height: 10px;
+	background-color: orangered;
+	width: 20%;
+}
+
+#lightGreyBox {
+	height: 10px;
+	background-color: lightgray;
+	width: 45%;
+}
+
+#greybox {
+	height: 10px;
+	background-color: gray;
+	width: 75%;
+}
+
+#geoLower {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
