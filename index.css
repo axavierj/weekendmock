@@ -7,10 +7,10 @@
 body{
     margin: 0;
     padding: 0;
-	background-color: black
+    background-color: black;
+    color: darkslategray;
 }
-body {
-}
+
 
 ul{
     margin: 0;
@@ -27,22 +27,27 @@ li{
 
 #mainContent{
     background-image: radial-gradient(#b6a794, #a6744f, #575350);
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: repeat (6, 1fr);
 }
 
 
 /* profile card */
 
 #profileCard{
+    border: 2px solid black;
     background-color: white;
-    width: 25%;
-    height: auto;
+    width: 350px;
+    height: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 
@@ -82,13 +87,22 @@ li{
     padding: 15px;
 }
 
+
+/* movie */
+
+#movie{
+    grid-column: 2/5;
+    grid-row: 1/4;
+}
+
 /* legion card */
 
 #legionCard{
     background-color: white;
-    width: 25%;
+    width: 350px;
 	text-align: center;
-	padding: 15px;
+    padding: 15px;
+    grid-row: 2/7;
 }
 
 #logoImg{
@@ -207,7 +221,10 @@ li{
 
 #geoCard {
 	background-color: white;
-	width: 35%;
+    width: 400px;
+    height: 450px;
+    grid-row: 2/8;
+    grid-column: 2/5;
 }
 
 
@@ -232,4 +249,113 @@ li{
 #geoLower {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.geoTextItem{
+    margin: 25px 0;
+}
+
+#pepole{
+    margin: 28px 0;
+}
+
+
+#pepole ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px 0 0;
+}
+
+
+#lowerGrafic{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#lowerGrafic span{
+    font-size: 4pt;
+}
+
+.sep{
+    background-color: grey;
+    height: 2.5px;
+    width: 50px;
+}
+
+#warGrafics{
+    padding: 25px 0 0 0;
+}
+
+.fa-male{
+    font-size: 10pt;
+}
+#geoLower{
+    padding: 0 10px;
+}
+
+#alphaCard{
+    width: 400px;
+    height: 500px;
+    font-size: 1.5rem;
+    position: relative;
+    background-image: url(images/egal2.png);
+    background-size: cover;
+    background-position: center center;
+    grid-column: 6/8;
+    /* border: 2px solid black; */
+}
+#overlay{
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    width: 100%;
+}
+
+#overlay h1{
+    color: white;
+}
+
+#overlay h1 span{
+    color: #bf9e75;
+}
+
+#alphaLogo{
+    text-align: center;
+}
+
+
+#alphaLogo img{
+    height: 100px;
+    width: 10px;
+}
+#as1{
+    transform: rotate(45deg);
+}
+#as2{
+    transform: rotate(-45deg);
+}
+
+#promo{
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    padding: 25px;
+    grid-row: 5/7;
+    grid-column: 7/9;
+}
+
+#promo h2, #promo h4{
+    margin: 0 0 10px 0;
+}
+
+.fa-check-circle{
+    font-size: 35px;
+    color: orangered;
+}
+#promo h4{
+    color: lightgray;
+}
+.byst{
+    color: lightslategray;
 }
