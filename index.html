@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <title>Maximus Desinus</title>
-</head>
-<body>
-    <main id="mainContent">
-        <div id="profileCard">
-            <img id="proPic" src="images/ProfilePic.png" alt="Profile picture">
-            <h2 id="profileHeading">MAXIMUS</h2>
-            <h4>LEGIO HISPANIA</h4>
-            <div id="ProfileFooter">
-                <div class="PfElements">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+		<link rel="stylesheet" href="css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<section id="Profile" class="card">
+				<div class="close">
+				<span class="closing">x</span>
+				</div>
+				<img id="proPic" src="images/ProfilePic.png" alt="Profile picture">
+            	<h2 id="profileHeading">MAXIMUS</h2>
+            	<h4 id="profilSubHead">LEGIO HISPANIA</h4>
+				<footer id="ProfileFooter">
+					<div class="PfElements">
                     <h3>LXIII</h3>
                     <h4>ENEMIES</h4>
-                </div>
-                <div class="PfElements">
-                    <h3>VII</h3>
-                    <h4>CONQUERED</h4>
-                </div>
-                <div class="PfElements">
-                    <h3>III</h3>
-                    <h4>RANK</h4>
-                </div>
-            </div>
-        </div>
-        <div id="legionCard">
-            <div id="mainLogo">
-                <img id="logoImg" src="images/helmet.png" alt="">
+					</div>
+					<div class="PfElements">
+						<h3>VII</h3>
+						<h4>CONQUERED</h4>
+					</div>
+					<div class="PfElements">
+						<h3>III</h3>
+						<h4>RANK</h4>
+					</div>
+				</footer>
+			</section>
+			<section id="Stats" class="card">
+				<div class="close">
+					<span class="closing">x</span>
+				</div>
+				<img id="logoImg" src="images/helmet.png" alt="">
                 <h3>LEGIO HISPANIA</h3>
-                <div id="subLogo">
-                    <img id="subl_1" src="images/sword silver.png" alt="">
-                    <h4>XV</h4>
-                    <img id="subl_2" src="images/sword silver.png" alt="">
-                </div>
-                <div id="lower">
-                    <section id="stats">
-                        <div class="statbar" id="orangeStat">
+				<div id="subLogo">
+					<img id="subl_1" src="images/sword silver.png" alt="">
+                	<h4>XV</h4>
+                	<img id="subl_2" src="images/sword silver.png" alt="">
+				</div>
+				<div id="mainStats">
+					<div class="statbar" id="orangeStat">
                             <h4>COHORTS</h4>
                             <h4>XIII</h4>
                         </div>
@@ -52,82 +56,89 @@
                             <h4>EQUITES</h4>
                             <h4>LXIII</h4>
                         </div>
-                    </section>
-                    <div id="statFooter">
-                        <div class="sfCircle" id="c1">
-                            <h3>XII</h3>
-                        </div>
-                        <div class="sfCircle" id="c2">
-                            <h3>XV</h3>
-                        </div>
-                        <div class="sfCircle" id="c3">
-                            <h3>III</h3>
-                        </div>
+				</div>
+				<footer id="statFooter">
+					<div class="sfCircle" id="c1">
+                    	<h3>XII</h3>
                     </div>
-                        <h4 id="satteext">SOME STATS</h4>
-                </div>
-            </div>
-        </div>
-        <iframe height="300" width="400" id="movie" src="https://www.youtube.com/embed/Yx4bnwvGmKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-        <div id="geoCard">
-            <section id="map">
+                     <div class="sfCircle" id="c2">
+                     	<h3>XV</h3>
+                     </div>
+                     <div class="sfCircle" id="c3">
+                     	<h3>III</h3>
+                     </div>
+				</footer>
+				<h4 id="satteext">SOME STATS</h4>
 			</section>
-			<section id="geoLower">
-				<ul id="geoText">
-                    <li class="geoTextItem">War fare <br>
-                        Stats</li>
-					<li class="geoTextItem">SLAVES CONQUERES</li>
-					<li class="geoTextItem">WARFARE FORMATION</li>
-				</ul>
+			<section id="video" class="card">
+				<iframe src="https://www.youtube.com/embed/Yx4bnwvGmKM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			</section>
+			<section id="Map" class="card">
+				<div id="mapImage">
+					<div class="close">
+						<span class="closing">x</span>
+					</div>
+				</div>
+				<div id="geoLower">
+					<ul id="geoText">
+						<li class="geoTextItem">War fare <br>
+							Stats</li>
+						<li class="geoTextItem">SLAVES CONQUERES</li>
+						<li class="geoTextItem">WARFARE FORMATION</li>
+					</ul>
+				
+				
 				<div id="warGrafics">
 					<div id="orangeBox"></div>
 					<div id="lightGreyBox"></div>
                     <div id="greybox"></div>
-                    <div id="pepole">
-                        <ul>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                            <li><i class="fas fa-male"></i></li>
-                        </ul>
-                    </div>
-                    <div id="lowerGrafic">
-                        <spav>x</spav>
-                        <div class="sep"></div>
-                        <spav>x</spav>
-                        <div class="sep"></div>
-                        <spav>x</spav>
-                    </div>
-                </div>
-                
+                 <div id="pepole">
+                    <ul>
+                   	 <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                      <li><i class="fas fa-male"></i></li>
+                    </ul>
+                  </div>
+						<div id="lowerGrafic">
+							<spav>x</spav>
+							<div class="sep"></div>
+							<spav>x</spav>
+							<div class="sep"></div>
+							<spav>x</spav>
+						</div>
+                	</div>
+				</div>
 			</section>
-            
-        </div>
-        <div id="alphaCard">
-                <div id="overlay">
-                    <h1>ACDE<br>FHGIJ<br>MNLT<br><span>RSUV<br>QXWY<br>OP</span></h1>
-                    <div id="alphaLogo">
-                        <img id="as1" src="images/sword silver.png" alt="">
-                        <img id="as2" src="images/swordGold.png" alt="">
-                    </div>
-                </div>
-        </div>
-        <div id="promo">
-            <img src="images/templeicon.png" alt="">
-            <h2>SURRENDER</h2>
-            <h4>ANIHALATED <span class="byst">BY</span> LEGIO HISPANIA</h4>
-            <i class="fas fa-check-circle"></i>
-		</div>
-    </main>
-</body>
+			<section id="Alpha" class="card">
+				<div id="overlay"></div>
+				<div id="aGraph">
+					<h1>ACDE<br>FHGIJ<br>MNLT<br><span>RSUV<br>QXWY<br>OP</span></h1>
+					<div id="alphaLogo">
+						<img id="as1" src="images/sword silver.png" alt="">
+						<img id="as2" src="images/swordGold.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section id="Promo" class="card">
+				<div class="close">
+					<span class="closing">x</span>
+				</div>
+				<img src="images/templeicon.png" alt="">
+            	<h2>SURRENDER</h2>
+            	<h4>ANIHALATED <span class="byst">BY</span> LEGIO HISPANIA</h4>
+            	<i class="fas fa-check-circle"></i>
+			
+			</section>
+		</main>
+	</body>
 </html>
